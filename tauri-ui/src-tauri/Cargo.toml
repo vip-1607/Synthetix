@@ -1,0 +1,11 @@
+[package]
+name = "synthetix"
+version = "0.1.6"
+description = "React/Tauri UI for Synthetix"
+edition = "2021"
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"

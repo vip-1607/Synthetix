@@ -1,0 +1,42 @@
+:root {
+  font-family: "Pretendard", "Noto Sans KR", "Segoe UI", sans-serif;
+  color: #1f2b24;
+  background: #f4f7f1;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-width: 720px;
+  min-height: 100vh;
+  background: radial-gradient(circle at top right, #daeac9 0, transparent 31rem), #f4f7f1;
+}
+
+button, input { font: inherit; }
+.app-shell { width: min(900px, calc(100% - 64px)); margin: 0 auto; padding: 64px 0 52px; }
+.hero { margin-bottom: 32px; }
+h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.35rem); letter-spacing: -.07em; line-height: 1; }
+.hero > p:last-child { color: #5d6a60; margin: 16px 0 0; font-size: 1.04rem; }
+.card { background: rgba(255,255,255,.88); border: 1px solid #dbe6d5; border-radius: 20px; box-shadow: 0 20px 45px rgba(54,84,55,.08); }
+.form-card { padding: 30px; }
+.step { display: flex; align-items: center; gap: 13px; margin: 2px 0 12px; }
+.step span { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: #e4f0dc; color: #37673d; font-weight: 800; }
+h2 { margin: 0; font-size: 1rem; }
+.step p { margin: 3px 0 0; font-size: .84rem; color: #718072; }
+.path-row { display: flex; gap: 10px; margin-bottom: 27px; }
+input { flex: 1; min-width: 0; padding: 12px 13px; border: 1px solid #cbd9c5; border-radius: 10px; color: #364538; background: #fafdf8; }
+button { border: 0; border-radius: 10px; padding: 11px 16px; font-weight: 800; cursor: pointer; transition: transform .15s, background .15s; }
+button:hover:not(:disabled) { transform: translateY(-1px); }
+button:disabled { cursor: wait; opacity: .68; }
+.secondary { white-space: nowrap; color: #38683d; background: #e5f1de; }
+.primary { width: 100%; padding: 15px; color: #fff; background: #326e3a; font-size: 1rem; }
+.primary:hover:not(:disabled) { background: #285c30; }
+.status { border-left: 4px solid #7d9c70; padding: 12px 16px; background: #edf4e8; border-radius: 0 10px 10px 0; color: #405042; }
+.status.running { border-left-color: #d09145; background: #fff5e7; }
+.status strong { font-size: .84rem; }
+.status p { margin: 5px 0 0; white-space: pre-wrap; line-height: 1.55; }
+.metrics { display: flex; gap: 12px; margin-top: 12px; color: #405042; }
+.metrics span { flex: 1; padding: 12px 16px; border: 1px solid #dbe6d5; border-radius: 10px; background: rgba(255,255,255,.72); font-size: .9rem; }
+.metrics strong { margin-left: 5px; color: #285c30; }

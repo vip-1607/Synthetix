@@ -1,0 +1,15 @@
+/target/
+/tauri-ui/node_modules/
+/tauri-ui/dist/
+/tauri-ui/src-tauri/target/
+/tauri-ui/src-tauri/target-portable/
+/tauri-ui/src-tauri/gen/
+/tauri-ui/*.log
+*.pyo
+__pycache__/
+venv/
+summary_result.txt
+/main.py
+/requirements.txt
+/Synthetix-engine.exe
+/src/bin/summary_ui.rs
